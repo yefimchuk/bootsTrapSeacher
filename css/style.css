@@ -1,0 +1,35 @@
+
+.nav-pills > li > a.active {
+    background-color: #ffffff !important;
+    color: black !important;
+
+}
+.nav-pills > li > a{
+    transition: background .1s linear;
+}
+.nav-pills > li > a:hover{
+    background: floralwhite;
+    color: black;
+}
+.nav-pills > li > a{
+    color: white;
+}
+
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{ background-color: white;
+color: black}
+.search
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#searcher{
+    width: 500px;
+}
+
+hide{
+    display: none;
+}

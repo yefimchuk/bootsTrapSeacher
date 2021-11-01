@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>Hello, world!</title>
+    <link href="js/script.js">
 </head>
 <body  >
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -18,19 +19,19 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="nav navbar">
-            <ul class=" nav nav-pills mr-auto">
+        <div class="nav navbar mr-auto">
+            <ul class=" nav nav-pills ">
 
                 <li class="active">
-                    <a class="nav-link col-md-12 " href="#searcher" data-toggle="pill">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link col-md-12 " href="#searcher1" data-toggle="pill">Searcher <span class="sr-only">(current)</span></a>
                 </li>
 
                 <li>
-                    <a class="nav-link" href="#list" data-toggle="pill" >Link</a>
+                    <a class="nav-link" href="#list" data-toggle="pill" >List of student</a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown ml-1">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown
+                        Expanded info about student
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Action</a>
@@ -49,11 +50,22 @@
         </form>
     </div>
 </nav>
-<div id="searcher">
+<div class="tab-content">
+<div class="tab-pane bg-light" id="searcher1" style="width: 100%; height: 2000px; background-image: linear-gradient(0deg, #343a40, white)" >
+    <div class="search">
+        <h1>Searcher names</h1>
+        <input type="text" id="searcher">
+        <div class="hello">
+<p>dd</p>
+        </div>
 
+    </div>
+</div>
+</div>
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
