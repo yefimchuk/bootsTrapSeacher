@@ -33,3 +33,54 @@ color: black}
 hide{
     display: none;
 }
+@keyframes xex {
+    50% { left: 0; }
+    90% { left: 300px; }
+}
+li {
+    margin: 7px;
+}
+.display-4{
+
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+
+        width: 300%;
+    }
+
+    to {
+        margin-left: 73.5%;
+        width: 100%;
+    }
+}
+.searchInp{
+    animation-duration: 1.5s;
+    animation-name: slideine;
+}
+@keyframes slideine {
+    from {
+
+width: 0px;
+    }
+
+    to {
+
+        width: 500px;
+    }
+}
+.ff{
+    font-size: 26px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+margin-right: 20px;
+    color: white;
+}
+.ff:hover{
+margin-bottom: 5px;
+}
+.navbar{
+    height: 70px;
+}

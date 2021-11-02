@@ -3,7 +3,7 @@ let allStudent = ["БЕМА Вадим Олегович", "БОНДАРЕНКО 
     "МІЦУРА Єгор Ігорович", "РАЗНО Олег Сергійович", "ЧЕРНЕНЬКИЙ Микола Михайлович", "ЯКОВЕНКО Ярослав Олегович"
     , "НЕЧАЄВ Нікіта Андрійович", "РИБАК Іван Андрійович", "КРЯЧКО Олексій Юрійович"]
 
-let div = document.querySelector(".hello")
+let div = document.querySelector(".colu")
 
 /*allStudent.map((item, i) => {
         let pen = document.createElement('p')
@@ -14,7 +14,7 @@ let div = document.querySelector(".hello")
 )*/
 let pens = document.querySelectorAll(".p")
 document.querySelector('#searcher').oninput = function () {
-    let hel = document.querySelector('.hello')
+    let hel = document.querySelector('.colu')
     console.log("hel", hel)
     hel.innerHTML = '';
     let filterItems = [];
@@ -33,9 +33,10 @@ document.querySelector('#searcher').oninput = function () {
 
         filterItems.map((item, i) => {
 
-            let pen = document.createElement('p')
+            let pen = document.createElement('h1')
+            pen.className = "lead"
             pen.append(item)
-            let hel = document.querySelector('.hello')
+            let hel = document.querySelector('.colu')
             if (item.toLowerCase().includes(val.toLowerCase())) {
                 hel.append(pen)
             }
