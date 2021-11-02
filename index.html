@@ -25,12 +25,12 @@
         <div class="nav navbar mr-auto">
             <ul class=" nav nav-pills ">
 
-                <li class="active">
-                    <a class="nav-link col-md-12 " href="#searcher1" data-toggle="pill">Searcher <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link active" data-bs-toggle="pill" href="#searcher1">Searcher </a>
                 </li>
 
-                <li>
-                    <a class="nav-link" data-toggle="pill" href="#list">List of student</a>
+                <li class="nav-item">
+                    <a class="nav-link" data-bs-toggle="pill" href="#list">List of student</a>
                 </li>
                 <li class="nav-item dropdown ml-1">
                     <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
@@ -51,21 +51,23 @@
 
         <form class="form-inline my-2 my-lg-0">
             <div class="ff">Sign up</div>
-            <button class="btn btn-outline-success my-2 my-sm-0" style="margin-right: 30px" type="submit">Sign up</button>
+
+            <a href="#singUp" class="btn btn-outline-success my-2 my-sm-0" style="margin-right: 30px" type="submit">Sign up
+
+            </a>
         </form>
     </div>
 </nav>
-<div class="container-fluid">
-    <div class="tab-content">
-        <div class="tab-pane bg-light text-dark" id="searcher1"
-             style="width: 100%; height: 2000px;">
 
+    <div class="tab-content">
+        <div class="tab-pane active bg-light text-dark" id="searcher1"
+             style="width: 100%; height: 1000px;">
 
 
             <br>
-                <div class="search ">
-                    <h1 class="display-4 ">Searcher names</h1>
-                    <br>
+            <div class="search ">
+                <h1 class="display-4 ">Searcher names</h1>
+                <br>
                 <input aria-label="Search" class="form-control mr-sm-2 searchInp" id="searcher" placeholder="Search"
                        type="search">
                 <br>
@@ -76,10 +78,30 @@
 
             </div>
         </div>
-    </div>
+        <div class="tab-pane active bg-light text-dark" id="list"
+             style="width: 100%; height: 1000px;">
+
+
+            <br>
+            <div class="search ">
+                <h1 class="display-4 ">List of student</h1>
+                <br>
+<div class="listStud">
 
 </div>
-</div>
+                <br>
+                <div class="colu  text-dark display-4">
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+
+
 <script crossorigin="anonymous"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
