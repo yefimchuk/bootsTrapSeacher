@@ -19,6 +19,17 @@
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link
 { background-color: white;
 color: black}
+
+
+
+li {
+    margin: 7px;
+}
+.display-4{
+
+    animation-duration: 2s;
+    animation-name: slidein;
+}
 .search
 {
     display: flex;
@@ -28,22 +39,6 @@ color: black}
 }
 #searcher{
     width: 500px;
-}
-
-hide{
-    display: none;
-}
-@keyframes xex {
-    50% { left: 0; }
-    90% { left: 300px; }
-}
-li {
-    margin: 7px;
-}
-.display-4{
-
-    animation-duration: 2s;
-    animation-name: slidein;
 }
 @keyframes slidein {
     from {
@@ -81,6 +76,48 @@ margin-right: 20px;
 .ff:hover{
 margin-bottom: 5px;
 }
-.navbar{
-    height: 70px;
+@media (max-width: 600px) {
+    .media {
+        width: 200px;
+
+    }
+
+    .display-4 {
+
+        animation-duration: 2s;
+        animation-name: slidein;
+    }
+
+    @keyframes slidein {
+        from {
+
+            position: relative;
+            right: 70%;
+        }
+
+        to {
+            position: relative;
+            right: 0%;
+            opacity: 1;
+        }
+    }
+    .searchInp {
+        animation-duration: 1s;
+        animation-name: slideine;
+    }
+
+    @keyframes slideine {
+        from {
+
+            width: 0px;
+        }
+
+        to {
+
+
+        }
+    }
+    #searcher{
+        width: 100%;
+    }
 }

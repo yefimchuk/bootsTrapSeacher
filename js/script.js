@@ -15,7 +15,6 @@ let allStudent = ["БЕМА Вадим Олегович", "БОНДАРЕНКО 
 let pens = document.querySelectorAll(".p")
 document.querySelector('#searcher').oninput = function () {
     let hel = document.querySelector('.colu')
-    console.log("hel", hel)
     hel.innerHTML = '';
     let filterItems = [];
     let val = this.value.trim()
@@ -28,8 +27,6 @@ document.querySelector('#searcher').oninput = function () {
             }
 
         });
-        console.log("filterItems: ", filterItems)
-        console.log("filterItems: ", val)
 
         filterItems.map((item) => {
 
