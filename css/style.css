@@ -163,8 +163,7 @@ navbar-toggler{
     }
     to {
         margin-top: 250px;
-    }
-}
+    } }
 .del{
     display: flex;
     flex-direction: row;
