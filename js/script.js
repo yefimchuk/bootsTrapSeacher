@@ -32,7 +32,6 @@ document.querySelector('#searcher').oninput = function () {
 
             let pen = document.createElement('h1')
             pen.className = "lead"
-
             pen.append(item)
             let hel = document.querySelector('.colu')
             if (item.toLowerCase().includes(val.toLowerCase()))
@@ -64,15 +63,9 @@ if (collapsed === "true")
     document.querySelector(".tab-pane").style.marginTop = "0px"
     document.querySelector(".tab-pane2").style.marginTop = "0px"
 
-console.log("small")
 }
 else {
     document.querySelector(".tab-pane").style.marginTop = "250px"
     document.querySelector(".tab-pane2").style.marginTop = "250px"
-
-
-console.log("big")
-
-
 }
 }

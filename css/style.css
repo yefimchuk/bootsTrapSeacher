@@ -28,11 +28,19 @@ li {
     margin: 7px;
 }
 .display-4 {
-
+margin-top: 120px;
     animation-duration: 1.5s;
     animation-name: slidein;
 }
-
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
 @keyframes slidein {
     from {
 
@@ -139,7 +147,7 @@ margin-bottom: 5px;
         }
     }
     #searcher{
-        width: 100%;
+        width: 80%;
     }
 }
 navbar-toggler{
@@ -168,4 +176,12 @@ navbar-toggler{
 }
 .navbar-brand {
     margin-left: 20px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    padding-right: var(--bs-gutter-x,0rem);
+    padding-left: var(--bs-gutter-x,0rem);
+}
+.navbar{
+    padding-bottom: 2px;
+    padding-top: 4px;
 }
