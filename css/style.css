@@ -1,4 +1,6 @@
-
+.body{
+    background: #f8f9fa;
+}
 .nav-pills > li > a.active {
     background-color: #ffffff !important;
     color: black !important;
@@ -121,4 +123,28 @@ margin-bottom: 5px;
     #searcher{
         width: 100%;
     }
+}
+navbar-toggler{
+
+}
+.togler{
+    animation-duration: 1s;
+    animation-name: togler;
+}
+@keyframes togler {
+    from {
+        margin-top: 0px;
+    }
+    to {
+        margin-top: 250px;
+    }
+}
+.del{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tab-pane2 {
+    margin-right: 35px;
 }

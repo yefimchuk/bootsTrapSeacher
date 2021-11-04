@@ -52,3 +52,21 @@ allStudent.map((item) =>{
     stud.append(item)
     list.append(stud)
 })
+let navTog = document.querySelector(".navbar-toggler")
+navTog.onclick = () => {
+    let collapsed = document.querySelector(".navbar-toggler").getAttribute('aria-expanded')
+    let collapsed2 = document.querySelector(".navbar-toggler")
+if (collapsed === "true")
+{
+    document.querySelector(".tab-pane").style.marginTop = "0px"
+    document.querySelector(".tab-pane2").style.marginTop = "0px"
+console.log("small")
+}
+else {
+    document.querySelector(".tab-pane").style.marginTop = "250px"
+    document.querySelector(".tab-pane2").style.marginTop = "250px"
+console.log("big")
+
+
+}
+}
