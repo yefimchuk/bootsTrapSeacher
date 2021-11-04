@@ -27,10 +27,24 @@ color: black}
 li {
     margin: 7px;
 }
-.display-4{
+.display-4 {
 
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+
+        position: relative;
+        right: 80%;
+    }
+
+    to {
+        position: relative;
+        right: 0%;
+        opacity: 1;
+    }
 }
 .search
 {
@@ -42,17 +56,7 @@ li {
 #searcher{
     width: 500px;
 }
-@keyframes slidein {
-    from {
 
-        width: 300%;
-    }
-
-    to {
-        margin-left: 73.5%;
-        width: 100%;
-    }
-}
 .searchInp{
     animation-duration: 1.5s;
     animation-name: slideine;
@@ -78,6 +82,21 @@ margin-right: 20px;
 .ff:hover{
 margin-bottom: 5px;
 }
+.searchInp2 {
+    animation-duration: 1.5s;
+    animation-name: slideine3;
+}
+@keyframes slideine3 {
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
 @media (max-width: 600px) {
     .media {
         width: 200px;
@@ -86,7 +105,7 @@ margin-bottom: 5px;
 
     .display-4 {
 
-        animation-duration: 2s;
+        animation-duration: 1.5s;
         animation-name: slidein;
     }
 
@@ -94,7 +113,7 @@ margin-bottom: 5px;
         from {
 
             position: relative;
-            right: 70%;
+            right: 50%;
         }
 
         to {
@@ -104,10 +123,9 @@ margin-bottom: 5px;
         }
     }
     .searchInp {
-        animation-duration: 1s;
+        animation-duration: 1.5s;
         animation-name: slideine;
     }
-
 
     @keyframes slideine {
         from {
@@ -128,7 +146,7 @@ navbar-toggler{
 
 }
 .togler{
-    animation-duration: 1s;
+    animation-duration: 1.5s;
     animation-name: togler;
 }
 @keyframes togler {
@@ -147,4 +165,7 @@ navbar-toggler{
 }
 .tab-pane2 {
     margin-right: 35px;
+}
+.navbar-brand {
+    margin-left: 20px;
 }
