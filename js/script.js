@@ -62,7 +62,6 @@ if (collapsed === "true")
 {
     document.querySelector(".tab-pane").style.marginTop = "0px"
     document.querySelector(".tab-pane2").style.marginTop = "0px"
-
 }
 else {
     document.querySelector(".tab-pane").style.marginTop = "250px"
