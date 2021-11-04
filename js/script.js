@@ -1,9 +1,9 @@
 let allStudent = ["БЕМА Вадим Олегович", "БОНДАРЕНКО Богдан Сергійович", "ВАЩУК Олександр Олегович", "ДЕМЕНСЬКИЙ Артур Максимович",
     "ЄФІМЧУК Дмитро Сергійович", "КОЖЕВНІКОВ Ілля Богданович", "КАРПЕНКО Анатолій Віталійович",
     "МІЦУРА Єгор Ігорович", "РАЗНО Олег Сергійович", "ЧЕРНЕНЬКИЙ Микола Михайлович", "ЯКОВЕНКО Ярослав Олегович"
-    , "НЕЧАЄВ Нікіта Андрійович", "РИБАК Іван Андрійович", "КРЯЧКО Олексій Юрійович"]
+    , "НЕЧАЄВ Нікіта Андрійович", "РИБАК Іван Андрійович", "КРЯЧКО Олексій Юрійович", ]
 
-let div = document.querySelector(".hello")
+
 
 /*allStudent.map((item, i) => {
         let pen = document.createElement('p')
@@ -14,8 +14,7 @@ let div = document.querySelector(".hello")
 )*/
 let pens = document.querySelectorAll(".p")
 document.querySelector('#searcher').oninput = function () {
-    let hel = document.querySelector('.hello')
-    console.log("hel", hel)
+    let hel = document.querySelector('.colu')
     hel.innerHTML = '';
     let filterItems = [];
     let val = this.value.trim()
@@ -28,54 +27,45 @@ document.querySelector('#searcher').oninput = function () {
             }
 
         });
-        console.log("filterItems: ", filterItems)
-        console.log("filterItems: ", val)
 
-        filterItems.map((item, i) => {
+        filterItems.map((item) => {
 
-            let pen = document.createElement('p')
+            let pen = document.createElement('h1')
+            pen.className = "lead"
             pen.append(item)
-            let hel = document.querySelector('.hello')
-            if (item.toLowerCase().includes(val.toLowerCase())) {
+            let hel = document.querySelector('.colu')
+            if (item.toLowerCase().includes(val.toLowerCase()))
                 hel.append(pen)
-            }
-            else
-                {
-                    hel.removeChild(pen)
-                }
+
+
             }
         )
 
     }
 }
-/*
-document.querySelector('#searcher').oninput = function () {
-    let val = this.value.trim()
-    let elem = document.querySelectorAll(".searcher2 li");
-
-    if (val != "") {
-
-        allStudent.forEach(function (item, i ){
-let pen = document.createElement('p')
-            pen.innerHTML = item
-            document.querySelector('.hello').innerHTML = item
-    /!*        if (item.toLowerCase().search(val.toLowerCase()) == -1){
-                item.classList.add("hide")
-                console.log("алал")
 
 
-            }
-            else {
-                div.innerHTML = item
+let list = document.querySelector(".listStud")
+allStudent.map((item) =>{
+    let stud = document.createElement('h1')
+    stud.className = "lead"
+    stud.classList.add("searchInp2")
+    stud.append(item)
+    list.append(stud)
+})
+let navTog = document.querySelector(".navbar-toggler")
 
-            }*!/
+navTog.onclick = () => {
+    let collapsed = document.querySelector(".navbar-toggler").getAttribute('aria-expanded')
+    let collapsed2 = document.querySelector(".navbar-toggler")
+if (collapsed === "true")
+{
+    document.querySelector(".tab-pane").style.marginTop = "0px"
+    document.querySelector(".tab-pane2").style.marginTop = "0px"
 
-        })
-
-    }
-    else {
-        elem.forEach(function (elemm){
-            elemm.classList.remove('hide')
-        })
-    }
-}*/
+}
+else {
+    document.querySelector(".tab-pane").style.marginTop = "250px"
+    document.querySelector(".tab-pane2").style.marginTop = "250px"
+}
+}

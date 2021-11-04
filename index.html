@@ -6,67 +6,123 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/style.css">
     <title>Hello, world!</title>
     <link href="js/script.js">
 </head>
-<body  >
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Yefimchuk</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<body>
+<div class=" container-fluid">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="nav navbar mr-auto">
-            <ul class=" nav nav-pills ">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top ">
+        <a class="navbar-brand" href="#">Yefimchuk</a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-target="#navbarSupportedContent" data-toggle="collapse" type="button" style="margin-right: 7px">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-                <li class="active">
-                    <a class="nav-link col-md-12 " href="#searcher1" data-toggle="pill">Searcher <span class="sr-only">(current)</span></a>
-                </li>
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <div class="d-lg-flex  justify-content-between align-items-center" style="width: 100%;">
+                <div class="nav navbar  ">
+                    <ul class=" nav nav-pills ">
 
-                <li>
-                    <a class="nav-link" href="#list" data-toggle="pill" >List of student</a>
-                </li>
-                <li class="nav-item dropdown ml-1">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Expanded info about student
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <li class="nav-item">
+                            <a class="nav-link active media" data-bs-toggle="pill" href="#searcher1">Searcher </a>
+                        </li>
+
+                        <li class="nav-item media">
+                            <a class="nav-link" data-bs-toggle="pill" href="#list">List of student</a>
+                        </li>
+                        <li class="nav-item dropdown ml-1">
+                            <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle"
+                               data-toggle="dropdown"
+                               href="#" id="navbarDropdown" role="button">
+                                Expanded info about student
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="nav nav-pills d-lg-flex justify-content-center " >
+                    <form class="nav nav-pills ">
+                        <div class="ff">Sign up</div>
+                        <a href="#signUp" class="btn btn-outline-success my-2 my-sm-0 nav-linker" data-toggle="pill"
+                           style="margin-right: 30px"
+                           type="submit">Sign up
+
+                        </a>
+
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+</div>
+
+<div class="container-fluid">
+    <div class="container-fluid">
+        <div class="tab-content">
+            <div class="tab-pane active bg-light text-dark" id="searcher1"
+                 style="width: 100%; height: 1000px;">
+
+                <div class="search ">
+
+                    <h1 class="display-4  ">Searcher names</h1>
+                    <br>
+                    <input aria-label="Search" class="form-control mr-sm-2 searchInp" id="searcher" placeholder="Search"
+                           type="search">
+                    <br>
+                    <div class="colu  text-dark display-4">
+
                     </div>
-                </li>
-          
-            </ul>
+
+
+                </div>
+            </div>
+            <div class="tab-pane tab-pane2  bg-light text-dark" id="list"
+                 style="width: 100%; height: 1000px;">
+                <div class="search ">
+                    <h1 class="display-4 ">List of student</h1>
+                    <br>
+                    <div class="listStud">
+
+                    </div>
+                    <br>
+                    <div class="colu  text-dark display-4" style="width: 1000px;">
+
+                    </div>
+
+
+                </div>
+            </div>
+
+
         </div>
 
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            <div></div>
-        </form>
     </div>
-</nav>
-<div class="tab-content">
-<div class="tab-pane bg-light" id="searcher1" style="width: 100%; height: 2000px; background-image: linear-gradient(0deg, #343a40, white)" >
-    <div class="search">
-        <h1>Searcher names</h1>
-        <input type="text" id="searcher">
-        <div class="hello">
-<p>dd</p>
-        </div>
 
-    </div>
 </div>
-</div>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script crossorigin="anonymous"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script crossorigin="anonymous"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

@@ -1,4 +1,6 @@
-
+.body{
+    background: #f8f9fa;
+}
 .nav-pills > li > a.active {
     background-color: #ffffff !important;
     color: black !important;
@@ -19,6 +21,39 @@
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link
 { background-color: white;
 color: black}
+
+
+
+li {
+    margin: 7px;
+}
+.display-4 {
+margin-top: 120px;
+    animation-duration: 1.5s;
+    animation-name: slidein;
+}
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.3em;
+    height: 1.3em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+@keyframes slidein {
+    from {
+
+        position: relative;
+        right: 80%;
+    }
+
+    to {
+        position: relative;
+        right: 0%;
+        opacity: 1;
+    }
+}
 .search
 {
     display: flex;
@@ -30,6 +65,123 @@ color: black}
     width: 500px;
 }
 
-hide{
-    display: none;
+.searchInp{
+    animation-duration: 1.5s;
+    animation-name: slideine;
+}
+@keyframes slideine {
+    from {
+
+width: 0px;
+    }
+
+    to {
+
+        width: 500px;
+    }
+}
+.ff{
+    font-size: 26px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+margin-right: 20px;
+    color: white;
+}
+.ff:hover{
+margin-bottom: 5px;
+}
+.searchInp2 {
+    animation-duration: 1.5s;
+    animation-name: slideine3;
+}
+@keyframes slideine3 {
+    from {
+
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+
+    }
+}
+@media (max-width: 600px) {
+    .media {
+        width: 200px;
+
+    }
+
+    .display-4 {
+
+        animation-duration: 1.5s;
+        animation-name: slidein;
+    }
+
+    @keyframes slidein {
+        from {
+
+            position: relative;
+            right: 50%;
+        }
+
+        to {
+            position: relative;
+            right: 0%;
+            opacity: 1;
+        }
+    }
+    .searchInp {
+        animation-duration: 1.5s;
+        animation-name: slideine;
+    }
+
+    @keyframes slideine {
+        from {
+
+            width: 0px;
+        }
+
+        to {
+
+
+        }
+    }
+    #searcher{
+        width: 80%;
+    }
+}
+navbar-toggler{
+
+}
+.togler{
+    animation-duration: 1.5s;
+    animation-name: togler;
+}
+@keyframes togler {
+    from {
+        margin-top: 0px;
+    }
+    to {
+        margin-top: 250px;
+    }
+}
+.del{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.tab-pane2 {
+    margin-right: 35px;
+}
+.navbar-brand {
+    margin-left: 20px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl{
+    padding-right: var(--bs-gutter-x,0rem);
+    padding-left: var(--bs-gutter-x,0rem);
+}
+.navbar{
+    padding-bottom: 2px;
+    padding-top: 4px;
 }
